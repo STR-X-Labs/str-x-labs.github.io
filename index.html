@@ -2,10 +2,9 @@
 <html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>STR-X Labs | Mayo Clinic Jacksonville</title>
-<meta name="description" content="STR-X Labs: Simulation, Telemedicine, Robotics and eXperimental education at Mayo Clinic in Jacksonville, Florida. Home of ASTRAL, the AI Surgical Tele-Robotic Laboratory.">
+<meta name="description" content="STR-X Labs: Simulation, Telemedicine, Robotics and eXperimental education at Mayo Clinic in Jacksonville, Florida. Home of ASTRAL, the AI-Surgical Training &amp; Mixed Reality Avatar Laboratory.">
 <meta name="robots" content="noindex">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 <link rel="stylesheet" href="style.css">
 </head><body>
 <header class="nav"><a class="logo" href="#top">STR<span>-X</span> LABS</a>
@@ -38,8 +37,8 @@
  <div class="inner reveal">
   <p class="kicker">Flagship program</p>
   <h2 class="mega">ASTRAL</h2>
-  <p class="sub">AI Surgical Tele-Robotic Laboratory</p>
-  <p class="lead">Funded by a Richard M. Schulze Innovation Award in Artificial Intelligence, ASTRAL records how master surgeons move, operate and decide. It turns that capture into simulation, robot training and, eventually, telerobotic surgery.</p>
+  <p class="sub">AI-Surgical Training &amp; Mixed Reality Avatar Laboratory</p>
+  <p class="lead">Funded by a Richard M. Schulze Innovation Award in Artificial Intelligence, ASTRAL uses volumetric capture, mixed reality and AI to record how master surgeons move, operate and decide, and turns it into immersive, repeatable training. The same data feeds simulation, robotics and telerobotics research.</p>
  </div>
 </section>
 
@@ -67,13 +66,16 @@
  <div class="inner">
   <p class="kicker">Global network</p>
   <h2>STR-X sites</h2>
-  <div id="map"></div>
-  <ul class="sitelist">
-   <li><b>Mayo Clinic, Jacksonville, FL</b><span>Hub · Dr W. David Freeman and Dr Giselle Coelho</span></li>
-   <li><b>Northwestern University / Lurie Children's, Chicago</b><span>Dr Sandi K. Lam · Pediatric neurosurgery</span></li>
-   <li><b>Santa Casa de Misericórdia do Pará, Belém, Brazil</b><span>Dr Simone Rogério · Pediatric neurosurgery</span></li>
-   <li><b>Brooke Army Medical Center, San Antonio, TX</b><span>Dr Levi Howard</span></li>
-  </ul>
+  <div class="gwrap">
+   <div class="globe-col"><canvas id="globe" aria-label="Interactive globe of STR-X sites. Drag to rotate." role="img"></canvas>
+    <div class="glabel" id="globeLabel" aria-live="polite"></div><p class="ghint">Drag to rotate · select a site to fly to it</p></div>
+   <ul class="sitelist">
+    <li class="site" data-site="jax"><b>Mayo Clinic · Jacksonville, FL</b><span>STR-X hub and ASTRAL studio · Dr W. David Freeman and Dr Giselle Coelho</span><button class="fly" data-fly="jax">Show on globe</button></li>
+    <li class="site" data-site="chi"><b>Northwestern / Lurie Children's · Chicago</b><span>Dr Sandi K. Lam · Pediatric neurosurgery</span><button class="fly" data-fly="chi">Show on globe</button></li>
+    <li class="site" data-site="bel"><b>Santa Casa do Pará · Belém, Brazil</b><span>Dr Simone Rogério · Pediatric neurosurgery · <a href="https://www.instagram.com/simonerogerio" target="_blank" rel="noopener">@simonerogerio</a></span><button class="fly" data-fly="bel">Show on globe</button></li>
+    <li class="site with-photo" data-site="bamc"><img src="assets/levi-howard.jpg" alt="Dr Levi Howard"><div><b>Brooke Army Medical Center · San Antonio, TX</b><span>Dr Levi Howard</span><button class="fly" data-fly="bamc">Show on globe</button></div></li>
+   </ul>
+  </div>
  </div>
 </section>
 
@@ -110,6 +112,9 @@
 
 <footer><span>STR-X LABS · Mayo Clinic, Jacksonville, Florida</span><span>Draft site · not an official Mayo Clinic page</span></footer>
 
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="vendor/d3-array.min.js"></script>
+<script src="vendor/d3-geo.min.js"></script>
+<script src="vendor/topojson-client.min.js"></script>
 <script src="main.js"></script>
+<script src="globe.js"></script>
 </body></html>
