@@ -12,10 +12,11 @@
         jax:  { name: 'Mayo Clinic · Jacksonville (hub)', ll: [-81.4413, 30.2645], kind: 'hub' },
         chi:  { name: "Northwestern / Lurie Children's · Chicago", ll: [-87.6219, 41.8963], kind: 'site' },
         bel:  { name: 'Santa Casa do Pará · Belém, Brazil', ll: [-48.48, -1.443], kind: 'site' },
-        bamc: { name: 'Brooke Army Medical Center · San Antonio', ll: [-98.4251, 29.4558], kind: 'site' }
+        bamc: { name: 'Brooke Army Medical Center · San Antonio', ll: [-98.4251, 29.4558], kind: 'site' },
+        bos:  { name: "Boston Children's Hospital · Boston", ll: [-71.1053, 42.3374], kind: 'site' }
     };
     const COLORS = { hub: '#ffffff', site: '#22d3ee', node: '#9fd8ff' };
-    const ARCS = [['jax','chi'],['jax','bel'],['jax','bamc']];
+    const ARCS = [['jax','chi'],['jax','bel'],['jax','bamc'],['jax','bos']];
 
     let land = null;
     let size = 0, dpr = 1;
