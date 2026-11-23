@@ -88,11 +88,6 @@ footer{display:flex;justify-content:space-between;padding:32px 5vw;font-size:11p
 .steps p{color:var(--mute);font-size:15px}
 .callout{border:1px solid rgba(34,211,238,.45);background:rgba(34,211,238,.06);padding:28px 32px;margin:8px 0 32px}
 .callout strong{color:var(--white);letter-spacing:.06em}
-.oss{list-style:none;display:flex;flex-direction:column;gap:18px;margin-top:12px}
-.oss li{border-top:1px solid #ffffff22;padding-top:16px}
-.oss a{color:var(--cyan);letter-spacing:.12em;text-transform:uppercase;font-size:13px;font-weight:400}
-.oss a:hover{border-bottom:1px solid var(--cyan)}
-.oss span{display:block;color:var(--mute);font-size:15px;margin-top:4px}
 .roadmap{display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-top:12px}
 .roadmap h3{margin-top:0}
 .credit{color:var(--mute);font-size:14px;letter-spacing:.08em;margin-top:-12px;margin-bottom:28px}
