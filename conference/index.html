@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>STR-X Conference Platform | STR-X Labs</title>
+<meta name="description" content="STR-X Conference Platform: a multi-site virtual case conference for complex neurosurgical pre-op planning, with a public synthetic-data demo. Built by STR-X Labs.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#050b1f">
+</head><body>
+<a class="skip" href="#top">Skip to content</a>
+<header class="nav">
+ <a class="logo" href="../index.html">STR<span>-X</span> LABS</a>
+ <nav id="site-menu">
+  <a href="../index.html#mission">Mission</a>
+  <a href="../index.html#astral">ASTRAL</a>
+  <a href="./" aria-current="page">Conference Platform</a>
+  <a href="../index.html#sites">Global sites</a>
+  <a href="../index.html#team">Leadership</a>
+  <a href="../index.html#board">Board</a>
+  <a href="../index.html#learn">Fellowship</a>
+  <a href="../index.html#social">Social</a>
+ </nav>
+ <button type="button" class="menu-toggle" aria-controls="site-menu" aria-expanded="false" aria-label="Open menu"><span aria-hidden="true"></span></button>
+</header>
+
+<section id="top" class="hero full" style="--img:url(../assets/telerobotics.jpg)">
+ <div class="shade"></div>
+ <div class="inner">
+  <p class="kicker">Virtual case conference</p>
+  <h1 class="page-title">STR-X Conference Platform</h1>
+  <p class="sub">One shared room · 3D imaging · later, live ASTRAL holograms</p>
+  <p class="lead">A multi-site virtual case conference (“tumor board”) for complex neurosurgical pre-op planning — tumor, trauma, and stroke. Sites around the world beam in to one shared room to review 3D imaging together and, later, live ASTRAL volumetric holograms from the AI-Surgical Training &amp; Mixed Reality Avatar Laboratory (ASTRAL).</p>
+  <p class="credit">STR-X Labs · Drs Giselle Coelho and W. David Freeman</p>
+  <a class="btn" href="#demo">Try the synthetic demo</a>
+  <a class="btn ghost" href="#join">Three ways to join</a>
+ </div>
+ <a class="scroll" href="#join">Scroll</a>
+</section>
+
+<section id="join" class="band">
+ <div class="inner">
+  <p class="kicker">Access</p>
+  <h2>Three ways to join one room</h2>
+  <p class="lead">Every site looks at the same case. Choose the view that fits the device in front of you.</p>
+  <div class="grid3">
+   <article class="card">
+    <i>Tier 1</i>
+    <h3>Meta Quest mixed reality</h3>
+    <p>Highest immersion. A life-size scan is anchored to the real OR table, with hand tracking, slice panels, and depth occlusion — so the volume sits in the room you are actually standing in.</p>
+   </article>
+   <article class="card">
+    <i>Tier 2</i>
+    <h3>Browser 3D room</h3>
+    <p>Orbit the table in any modern desktop or phone browser. Avatars mark who is present; a shared pointer marks what the group is looking at.</p>
+   </article>
+   <article class="card">
+    <i>Tier 3</i>
+    <h3>2D livestream</h3>
+    <p>Fixed spectator cameras — overhead, surgeon’s-eye, and side — for any device or a lecture-hall television. No headset required.</p>
+   </article>
+  </div>
+ </div>
+</section>
+
+<section id="session" class="band dark">
+ <div class="inner narrow">
+  <p class="kicker">Session flow</p>
+  <h2>How a session works</h2>
+  <ol class="steps">
+   <li><b>Invite-only sign-in</b><p>Participants enter with an invited account and multi-factor authentication. There is no open public room for live cases.</p></li>
+   <li><b>Disclosure on join</b><p>A required disclosure screen is shown before the room unlocks, so roles, recording status, and imaging rules are visible at the door.</p></li>
+   <li><b>Imaging rules</b><p>Only de-identified or consented imaging is used. This public page and demo contain no patient information.</p></li>
+   <li><b>Education log</b><p>Attendance minutes and a post-session evaluation are recorded so the activity can support continuing-education workflows if a series is later approved.</p></li>
+  </ol>
+ </div>
+</section>
+
+<section id="education" class="band">
+ <div class="inner narrow">
+  <p class="kicker">Continuing education</p>
+  <h2>Planned series, not yet accredited</h2>
+  <aside class="callout" role="note">
+   <p><strong>CME credit is not approved.</strong> Nothing on this page is an accredited Mayo Clinic activity, and STR-X is not claiming credit for visitors or pilots.</p>
+  </aside>
+  <p class="lead">We plan to propose this to Mayo Clinic CPD as a Regularly Scheduled Series, alternating early-morning and evening ET sessions so partners in Asia-Pacific (e.g., Japan, Australia) and the Americas can attend.</p>
+ </div>
+</section>
+
+<section id="opensource" class="band dark">
+ <div class="inner narrow">
+  <p class="kicker">Stack</p>
+  <h2>Built on open source</h2>
+  <ul class="oss">
+   <li><a href="https://www.orthanc-server.com/" target="_blank" rel="noopener">Orthanc</a><span>DICOM archive for study storage and retrieval in the live platform.</span></li>
+   <li><a href="https://kitware.github.io/vtk-js/" target="_blank" rel="noopener">vtk.js</a> · <a href="https://threejs.org/" target="_blank" rel="noopener">three.js</a> · <a href="https://www.w3.org/TR/webxr/" target="_blank" rel="noopener">WebXR</a><span>Browser 3D, volume views, and mixed-reality sessions (including this public demo).</span></li>
+   <li><a href="https://livekit.io/" target="_blank" rel="noopener">LiveKit</a><span>Realtime media for the shared room and 2D spectator livestreams.</span></li>
+   <li><a href="https://www.keycloak.org/" target="_blank" rel="noopener">Keycloak</a><span>Invite-only identity, roles, and multi-factor authentication.</span></li>
+   <li><a href="https://github.com/cwi-dis/cwipc" target="_blank" rel="noopener">cwipc</a><span>Point-cloud capture used for ASTRAL volumetric holograms.</span></li>
+  </ul>
+ </div>
+</section>
+
+<section id="status" class="band">
+ <div class="inner">
+  <p class="kicker">Roadmap</p>
+  <h2>Status</h2>
+  <div class="roadmap">
+   <div>
+    <h3>Now</h3>
+    <p class="lead">v0.2 prototype (Nov 2026). Public synthetic demo below — desktop, phone, and Meta Quest Browser.</p>
+   </div>
+   <div>
+    <h3>Next</h3>
+    <p class="lead">Quest 3 testing in the ASTRAL lab, live ASTRAL hologram streaming, and pilot sessions with partner sites.</p>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section id="demo" class="band dark demo-section">
+ <div class="inner">
+  <p class="kicker">Interactive demo</p>
+  <h2>Try the room</h2>
+  <p class="lead">Single-user, fully client-side, synthetic data only. Drag to orbit. Open it full screen for Meta Quest Browser or a lecture display.</p>
+  <p class="credit">Demo with synthetic data — no patient information</p>
+  <div id="conference-demo" class="demo-stage" role="region" aria-label="Synthetic conference room demo">
+   <p class="demo-fallback">Loading the synthetic conference-room demo. Requires a browser with WebGL 2.</p>
+  </div>
+  <p style="margin-top:20px">
+   <a class="btn ghost" href="demo/">Open full-screen demo</a>
+  </p>
+ </div>
+</section>
+
+<section id="pilot" class="band">
+ <div class="inner">
+  <div class="join">
+   <p class="kicker">Pilots</p>
+   <h2>Interested in joining a pilot session?</h2>
+   <p class="lead">Mayo Clinic CME/CPD staff and collaborating sites: write to us if you want to sit in on a prototype run.</p>
+   <a class="btn" href="mailto:strxlabs@gmail.com?subject=STR-X%20Conference%20Platform%20pilot">Interested in joining a pilot session?</a>
+  </div>
+ </div>
+</section>
+
+<footer><span>STR-X LABS · Mayo Clinic, Jacksonville, Florida</span><span>Not an official Mayo Clinic page</span></footer>
+<script src="../main.js"></script>
+<script type="module" src="demo/demo.js"></script>
+</body></html>
